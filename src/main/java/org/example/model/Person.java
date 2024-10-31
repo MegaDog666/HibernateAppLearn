@@ -1,9 +1,6 @@
 package org.example.model;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 
 @Entity
 @Table(name= "Person")
@@ -11,17 +8,16 @@ public class Person {
 
     @Id
     @Column(name = "id")
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     @Column(name = "name")
     private String name;
     @Column(name = "age")
     private int age;
 
-    public Person() {
+    public Person() {}
 
-    }
-
-    public Person(int id, String name, int age) {
+    public Person(String name, int age) {
         this.id = id;
         this.name = name;
         this.age = age;
