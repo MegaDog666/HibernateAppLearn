@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="5a70c107-bed4-4dc7-bb73-06289c13d1db" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/model/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/hibernate.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/AppTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Alghrotimes/Alghrotimes.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Alghrotimes/src/AVLTree.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Alghrotimes/src/Node.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LearnSpring/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../LearnSpring/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LearnSpring/src/main/java/ru/alishev/springcourse/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../LearnSpring/src/main/java/ru/alishev/springcourse/HelloController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LearnSpring/src/main/webapp/WEB-INF/applicationContextMVC.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../LearnSpring/src/main/webapp/WEB-INF/applicationContextMVC.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LearnSpring/src/main/webapp/WEB-INF/views/hello_world.html" beforeDir="false" afterPath="$PROJECT_DIR$/../LearnSpring/src/main/webapp/WEB-INF/views/hello_world.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LearnSpring/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../LearnSpring/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project1MySelf/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project1MySelf/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project1MySelf/.idea/dataSources.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project1MySelf/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project1MySelf/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project1MySelf/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project1MySelf/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project1MySelf/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project1MySelf/src/main/java/org/firstProject/config/MySpringMvcDispatcherServletInitializer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project1MySelf/src/main/java/org/firstProject/config/SpringConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project1MySelf/src/main/java/org/firstProject/controllers/BookController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project1MySelf/src/main/java/org/firstProject/controllers/PeopleController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project1MySelf/src/main/java/org/firstProject/dao/BooksDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project1MySelf/src/main/java/org/firstProject/dao/PersonDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project1MySelf/src/main/java/org/firstProject/models/Book.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project1MySelf/src/main/java/org/firstProject/models/Person.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project1MySelf/src/main/resources/database.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project1MySelf/src/main/webapp/WEB-INF/view/people/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project1MySelf/src/main/webapp/WEB-INF/view/people/show.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project1MySelf/src/main/webapp/index.jsp" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 1
+}]]></component>
+  <component name="ProjectId" id="2oAXGnMqxRZrDxTZ0oXAq8BoKwP" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "com.codeium.enabled": "true",
+    "git-widget-placeholder": "main",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
+    ]
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5a70c107-bed4-4dc7-bb73-06289c13d1db" name="Changes" comment="" />
+      <created>1730313263093</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1730313263093</updated>
+      <workItem from="1730313264209" duration="3048000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
