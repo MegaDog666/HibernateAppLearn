@@ -3,7 +3,7 @@
   <database-model serializer="dbm" dbms="POSTGRES" family-id="POSTGRES" format-version="4.49">
     <root id="1">
       <DateStyle>mdy</DateStyle>
-      <IntrospectionStateNumber>1117</IntrospectionStateNumber>
+      <IntrospectionStateNumber>1130</IntrospectionStateNumber>
       <ServerVersion>17.0</ServerVersion>
       <StartupTime>1729511854</StartupTime>
       <TimeZones>true ACDT
@@ -804,7 +804,7 @@ false Zulu
 13459||10|C|G
 13459||-9223372036854775808|U|G
 13459||10|U|G</Grants>
-      <IntrospectionStateNumber>1117</IntrospectionStateNumber>
+      <IntrospectionStateNumber>1130</IntrospectionStateNumber>
       <ObjectId>16685</ObjectId>
       <OwnerName>postgres</OwnerName>
     </database>
@@ -4231,139 +4231,198 @@ false Zulu
     <schema id="266" parent="3" name="public">
       <Comment>standard public schema</Comment>
       <Current>1</Current>
-      <IntrospectionStateNumber>1117</IntrospectionStateNumber>
-      <IntrospectionTimestamp>2024-11-05.14:54:16.393</IntrospectionTimestamp>
-      <LocalIntrospectionTimestamp>2024-11-05.11:54:16</LocalIntrospectionTimestamp>
+      <IntrospectionStateNumber>1130</IntrospectionStateNumber>
+      <IntrospectionTimestamp>2024-11-05.15:14:32.010</IntrospectionTimestamp>
+      <LocalIntrospectionTimestamp>2024-11-05.12:14:32</LocalIntrospectionTimestamp>
       <ObjectId>2200</ObjectId>
       <StateNumber>532</StateNumber>
       <OwnerName>pg_database_owner</OwnerName>
     </schema>
-    <sequence id="267" parent="266" name="passport_id_seq">
+    <sequence id="267" parent="266" name="actor_actor_id_seq">
       <DasType>integer|0s</DasType>
-      <ObjectId>16747</ObjectId>
+      <ObjectId>16760</ObjectId>
       <SequenceIdentity>1(1)</SequenceIdentity>
       <StartValue>1</StartValue>
-      <StateNumber>1116</StateNumber>
+      <StateNumber>1124</StateNumber>
       <OwnerName>postgres</OwnerName>
     </sequence>
-    <sequence id="268" parent="266" name="person_id_seq">
+    <sequence id="268" parent="266" name="movie_movie_id_seq">
       <DasType>integer|0s</DasType>
-      <ObjectId>16741</ObjectId>
+      <ObjectId>16770</ObjectId>
       <SequenceIdentity>1(1)</SequenceIdentity>
       <StartValue>1</StartValue>
-      <StateNumber>1114</StateNumber>
+      <StateNumber>1127</StateNumber>
       <OwnerName>postgres</OwnerName>
     </sequence>
-    <table id="269" parent="266" name="passport">
-      <ObjectId>16748</ObjectId>
-      <StateNumber>1116</StateNumber>
+    <table id="269" parent="266" name="actor">
+      <ObjectId>16761</ObjectId>
+      <StateNumber>1129</StateNumber>
       <AccessMethodId>2</AccessMethodId>
       <OwnerName>postgres</OwnerName>
     </table>
-    <table id="270" parent="266" name="person">
-      <ObjectId>16742</ObjectId>
-      <StateNumber>1116</StateNumber>
+    <table id="270" parent="266" name="actor_movie">
+      <ObjectId>16777</ObjectId>
+      <StateNumber>1129</StateNumber>
       <AccessMethodId>2</AccessMethodId>
       <OwnerName>postgres</OwnerName>
     </table>
-    <column id="271" parent="269" name="id">
+    <table id="271" parent="266" name="movie">
+      <ObjectId>16771</ObjectId>
+      <StateNumber>1129</StateNumber>
+      <AccessMethodId>2</AccessMethodId>
+      <OwnerName>postgres</OwnerName>
+    </table>
+    <check id="272" parent="269" name="actor_age_check">
+      <ColNames>age</ColNames>
+      <ObjectId>16764</ObjectId>
+      <Predicate>age &gt; 0</Predicate>
+      <StateNumber>1124</StateNumber>
+    </check>
+    <column id="273" parent="269" name="actor_id">
       <DasType>integer|0s</DasType>
       <IdentityKind>by-default</IdentityKind>
       <NotNull>1</NotNull>
       <Position>1</Position>
-      <StateNumber>1116</StateNumber>
-      <SequenceId>16747</SequenceId>
+      <StateNumber>1124</StateNumber>
+      <SequenceId>16760</SequenceId>
       <TypeId>23</TypeId>
     </column>
-    <column id="272" parent="269" name="passport_number">
-      <DasType>integer|0s</DasType>
-      <NotNull>1</NotNull>
-      <Position>2</Position>
-      <StateNumber>1116</StateNumber>
-      <TypeId>23</TypeId>
-    </column>
-    <column id="273" parent="269" name="person_id">
-      <DasType>integer|0s</DasType>
-      <Position>3</Position>
-      <StateNumber>1116</StateNumber>
-      <TypeId>23</TypeId>
-    </column>
-    <foreign-key id="274" parent="269" name="passport_person_id_fkey">
-      <ColNames>person_id</ColNames>
-      <NameSurrogate>1</NameSurrogate>
-      <ObjectId>16755</ObjectId>
-      <OnDelete>cascade</OnDelete>
-      <StateNumber>1116</StateNumber>
-      <RefKeyColPositions>1</RefKeyColPositions>
-      <RefTableId>16742</RefTableId>
-    </foreign-key>
-    <index id="275" parent="269" name="passport_pkey">
-      <ColNames>id</ColNames>
-      <NameSurrogate>1</NameSurrogate>
-      <ObjectId>16751</ObjectId>
-      <Primary>1</Primary>
-      <StateNumber>1116</StateNumber>
-      <Unique>1</Unique>
-      <AccessMethodId>403</AccessMethodId>
-    </index>
-    <index id="276" parent="269" name="passport_person_id_key">
-      <ColNames>person_id</ColNames>
-      <NameSurrogate>1</NameSurrogate>
-      <ObjectId>16753</ObjectId>
-      <StateNumber>1116</StateNumber>
-      <Unique>1</Unique>
-      <AccessMethodId>403</AccessMethodId>
-    </index>
-    <key id="277" parent="269" name="passport_pkey">
-      <NameSurrogate>1</NameSurrogate>
-      <ObjectId>16752</ObjectId>
-      <Primary>1</Primary>
-      <StateNumber>1116</StateNumber>
-      <UnderlyingIndexId>16751</UnderlyingIndexId>
-    </key>
-    <key id="278" parent="269" name="passport_person_id_key">
-      <NameSurrogate>1</NameSurrogate>
-      <ObjectId>16754</ObjectId>
-      <StateNumber>1116</StateNumber>
-      <UnderlyingIndexId>16753</UnderlyingIndexId>
-    </key>
-    <column id="279" parent="270" name="id">
-      <DasType>integer|0s</DasType>
-      <IdentityKind>by-default</IdentityKind>
-      <NotNull>1</NotNull>
-      <Position>1</Position>
-      <StateNumber>1114</StateNumber>
-      <SequenceId>16741</SequenceId>
-      <TypeId>23</TypeId>
-    </column>
-    <column id="280" parent="270" name="name">
+    <column id="274" parent="269" name="name">
       <DasType>varchar(100)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
-      <StateNumber>1114</StateNumber>
+      <StateNumber>1124</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="281" parent="270" name="age">
+    <column id="275" parent="269" name="age">
       <DasType>integer|0s</DasType>
       <Position>3</Position>
-      <StateNumber>1114</StateNumber>
+      <StateNumber>1124</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <index id="282" parent="270" name="person_pkey">
-      <ColNames>id</ColNames>
+    <index id="276" parent="269" name="actor_pkey">
+      <ColNames>actor_id</ColNames>
       <NameSurrogate>1</NameSurrogate>
-      <ObjectId>16745</ObjectId>
+      <ObjectId>16765</ObjectId>
       <Primary>1</Primary>
-      <StateNumber>1114</StateNumber>
+      <StateNumber>1124</StateNumber>
       <Unique>1</Unique>
       <AccessMethodId>403</AccessMethodId>
     </index>
-    <key id="283" parent="270" name="person_pkey">
+    <index id="277" parent="269" name="actor_name_key">
+      <ColNames>name</ColNames>
       <NameSurrogate>1</NameSurrogate>
-      <ObjectId>16746</ObjectId>
+      <ObjectId>16767</ObjectId>
+      <StateNumber>1124</StateNumber>
+      <Unique>1</Unique>
+      <AccessMethodId>403</AccessMethodId>
+      <CollationNames>default</CollationNames>
+      <CollationIds>100</CollationIds>
+      <CollationParentNames>pg_catalog</CollationParentNames>
+    </index>
+    <key id="278" parent="269" name="actor_pkey">
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>16766</ObjectId>
       <Primary>1</Primary>
-      <StateNumber>1114</StateNumber>
-      <UnderlyingIndexId>16745</UnderlyingIndexId>
+      <StateNumber>1124</StateNumber>
+      <UnderlyingIndexId>16765</UnderlyingIndexId>
+    </key>
+    <key id="279" parent="269" name="actor_name_key">
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>16768</ObjectId>
+      <StateNumber>1124</StateNumber>
+      <UnderlyingIndexId>16767</UnderlyingIndexId>
+    </key>
+    <column id="280" parent="270" name="actor_id">
+      <DasType>integer|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <StateNumber>1129</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="281" parent="270" name="movie_id">
+      <DasType>integer|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+      <StateNumber>1129</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <foreign-key id="282" parent="270" name="actor_movie_actor_id_fkey">
+      <ColNames>actor_id</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>16782</ObjectId>
+      <StateNumber>1129</StateNumber>
+      <RefKeyColPositions>1</RefKeyColPositions>
+      <RefTableId>16761</RefTableId>
+    </foreign-key>
+    <foreign-key id="283" parent="270" name="actor_movie_movie_id_fkey">
+      <ColNames>movie_id</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>16787</ObjectId>
+      <StateNumber>1129</StateNumber>
+      <RefKeyColPositions>1</RefKeyColPositions>
+      <RefTableId>16771</RefTableId>
+    </foreign-key>
+    <index id="284" parent="270" name="actor_movie_pkey">
+      <ColNames>actor_id
+movie_id</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>16780</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>1129</StateNumber>
+      <Unique>1</Unique>
+      <AccessMethodId>403</AccessMethodId>
+    </index>
+    <key id="285" parent="270" name="actor_movie_pkey">
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>16781</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>1129</StateNumber>
+      <UnderlyingIndexId>16780</UnderlyingIndexId>
+    </key>
+    <check id="286" parent="271" name="movie_year_of_production_check">
+      <ColNames>year_of_production</ColNames>
+      <ObjectId>16774</ObjectId>
+      <Predicate>year_of_production &gt; 1900</Predicate>
+      <StateNumber>1127</StateNumber>
+    </check>
+    <column id="287" parent="271" name="movie_id">
+      <DasType>integer|0s</DasType>
+      <IdentityKind>by-default</IdentityKind>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <StateNumber>1127</StateNumber>
+      <SequenceId>16770</SequenceId>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="288" parent="271" name="name">
+      <DasType>varchar(200)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+      <StateNumber>1127</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="289" parent="271" name="year_of_production">
+      <DasType>integer|0s</DasType>
+      <Position>3</Position>
+      <StateNumber>1127</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <index id="290" parent="271" name="movie_pkey">
+      <ColNames>movie_id</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>16775</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>1127</StateNumber>
+      <Unique>1</Unique>
+      <AccessMethodId>403</AccessMethodId>
+    </index>
+    <key id="291" parent="271" name="movie_pkey">
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>16776</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>1127</StateNumber>
+      <UnderlyingIndexId>16775</UnderlyingIndexId>
     </key>
   </database-model>
 </dataSource>
